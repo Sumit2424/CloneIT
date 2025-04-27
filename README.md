@@ -1,191 +1,219 @@
 # CloneIT
 
-A comprehensive web application that allows users to clone, analyze, and adapt websites. The project consists of four main components: Backend, Frontend, BrowserExtension, and SnapClone.
+![HackHazards '25 Banner](https://raw.githubusercontent.com/Sumit2424/CloneIT/assets/hackhazards_banner.jpg)
+*This project was proudly built during HackHazards '25 - India's biggest community hackathon*
 
-## Table of Contents
-- [Overview](#overview)
-- [Project Structure](#project-structure)
-- [Backend](#backend)
-- [Frontend](#frontend)
-- [Browser Extension](#browser-extension)
-- [SnapClone](#snapclone)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Features](#features)
+🚀 CloneIT
+Cursor AI + Figma + GPT, but built specifically for fast prototyping and real-time UI transformation.
 
-## Overview
-CloneIT is an advanced solution for web developers, designers, and content creators that enables you to:
+## 📌 Problem Statement
+Problem Statement 5 : Build the future of AI computer control with Screenpipe's- Terminator
 
-Capture and clone websites using a custom Chrome extension
+## 🎯 Objective
+CloneIT helps developers, designers, and businesses quickly clone any website UI, clean messy raw data, adapt elements using AI, and build faster without starting from scratch.
+It streamlines the prototyping and web cloning process, saving time, enhancing design thinking, and enabling real-time UI transformation with AI.
 
-Analyze UI/UX design and structure with ScreenPipe and Terminator
+## 🧠 Team & Approach
+Team Name: CloneIT Warriors
 
-Clean captured data for optimized usability
+Team Members:
 
-Adapt and enhance web components using Groq-based AI prompt analysis
+Shrestha Gupta (https://www.linkedin.com/in/shrestha-gupta-329275254, https://github.com/Runjhunn) – Frontend Developer
 
-Manage captured websites through an intuitive dashboard
+Alok Maurya (https://www.linkedin.com/in/alok-maurya-31894b323, https://github.com/am314-web) – AI Integration & Backend Developer
 
-Export, reuse, and adapt website components easily
+Maurya Sumit Ramnath (www.linkedin.com/in/sumit-maurya-12a4972bb, https://github.com/Sumit2424) – Fullstack Developer & System Architecture
 
-## Project Structure
+Approach:
 
-The project is structured into four main components, each serving a specific purpose:
+We chose this problem because website UI cloning is still manual and tedious for developers.
 
-```
-CloneIT/
-├── Backend/               # Server-side implementation
-├── Frontend/              # React-based user interface
-├── BrowserExtension/      # Chrome extension for capturing websites
-└── SnapClone/             # Additional component for snapshot capabilities
-```
+Key challenges:
 
-## Backend
+Cleaning messy website HTML data
 
-The Backend component provides the server-side functionality, handling data storage, processing, and API endpoints.
+Integrating real-time AI feedback into user workflows
 
-### Key Features:
-- **MongoDB Integration**: Stores user data, projects, and captured website information
-- **Express.js Server**: RESTful API endpoints for frontend communication
-- **AI Processing**: Processes and analyzes captured HTML content using AI models
-- **Session Management**: Tracks user sessions and capture sequences
-- **File Storage**: Manages file uploads with GridFS for larger files
-- **Authentication**: Secure user authentication and authorization
+Connecting Chrome Extension capture to backend AI processing
 
-### Main Components:
-- **server.js**: Core server implementation with Express
-- **routes/**: API endpoint definitions including history routes
-- **Database/**: MongoDB connection and schema models
-- **ai-processor/**: AI processing utilities for HTML content
-- **gridUploader/**: Handles file uploads to MongoDB GridFS
-- **firebase/**: Firebase integration for additional storage options
+Breakthroughs:
 
-## Frontend
+Built a full Chrome Extension + React Dashboard + NodeJS backend in parallel
 
-The Frontend is a modern React-based application providing an intuitive user interface for interacting with the system.
+Used ScreenPipe and Terminator to capture and process UI screens faster than traditional methods
 
-### Key Features:
-- **Responsive Dashboard**: User-friendly interface for all functionality
-- **Authentication**: Secure login and registration system
-- **Project Management**: View, create, and manage website cloning projects
-- **History Tracking**: Review past captures and projects
-- **Component Library**: Browse and use saved web components
-- **AI Adaptation**: Apply AI modifications to captured content
+Integrated Groq AI for smart UI adaptation
 
-### Main Components:
-- **src/pages/**: Main application pages including Dashboard, History, and more
-- **src/components/**: Reusable UI components
-- **src/context/**: React context providers for state management
-- **Tailwind CSS**: Styling framework for consistent and responsive design
+## 🛠️ Tech Stack
+Core Technologies Used:
 
-## Browser Extension
+Frontend: React.js, Tailwind CSS
 
-The BrowserExtension is a Chrome extension that allows users to capture and analyze websites directly from their browser.
+Backend: Node.js, Express.js
 
-### Key Features:
-- **Website Capture**: Screenshot and HTML capture of websites
-- **Element Selection**: Select specific elements on a page
-- **Integration**: Direct connection to the CloneIT backend
-- **Real-time Processing**: Process captured content immediately
+Database: MongoDB (via Mongoose, GridFS for file uploads)
 
-### Main Components:
-- **manifest.json**: Extension configuration
-- **popup.html/js/css**: Extension popup interface
-- **content.js**: Content script for website interaction
-- **background.js**: Background processes and event handling
-- **html2canvas.min.js**: Library for capturing website screenshots
+APIs:
 
-## SnapClone
+Groq AI (for contextual HTML understanding)
 
-SnapClone provides additional functionality for creating and managing website snapshots with specialized features.
+Gemini API (for design suggestions)
 
-### Key Features:
-- **Snapshot Management**: Create and organize website snapshots
-- **Backend Integration**: Specialized backend for snapshot processing
-- **Frontend Interface**: Dedicated interface for snapshot viewing
+Hosting: Localhost / Vercel (Frontend), Render / Railway (Backend)
 
-### Main Components:
-- **frontend/**: User interface specific to SnapClone
-- **be/**: Backend implementation for SnapClone
+Sponsor Technologies Used:
 
-## Getting Started
+✅ Groq: Prompted HTML content to suggest UI improvements and structure fixes
 
-### Prerequisites
-- Node.js (v14+ recommended)
+✅ Screenpipe: Used for screen capture and analyzing workflows
+
+✅ Terminator: Helped clean and format messy DOM structures
+
+(Monad, Base, Fluvio, Stellar were not used)
+
+## ✨ Key Features
+✅ Chrome Extension for Full Website Capture with the help of Terminator and ScreenPipe
+✅ Analysis of raw data .cleaned and convert it into prompt to understand ui/ux by groq.
+✅ Real-Time AI-Based UI Analysis and Adaptation
+✅ Component Extraction and Reusability
+✅ Capture History Management Dashboard
+✅ Secure Authentication (Firebase)
+✅ Snapshot and Project Organization (SnapClone Submodule)
+
+
+## 📸 Screenshots
+
+### Chrome Extension Capture Interface
+![Extension Popup](./assets/extension-popup.png)
+
+### Dashboard Overview
+![Dashboard](./assets/dashboard.png)
+
+### Component Editing using AI
+![Component Editor](./assets/component-editor.png)
+
+## 📽️ Demo & Deliverables
+Demo Video Link: [https://youtu.be/aJAFoneykKg?si=NetOr2ULwrkJz63Q]
+Pitch Deck / PPT Link: [https://drive.google.com/file/d/1d3XfZLWjHB_RlrpeejGo-BSH3Sd2PjJv/view?usp=sharing]
+
+## 🔒 API Keys and Environment Setup
+GROQ_API_KEY="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"
+MONGO_URI="mongodb+srv://mauryasumit8983:6ETE7c4GsEZwJiCE@cluster0.gbe8oqb.mongodb.net/"
+GEMINI_API_KEY="AIzaSyDHgoARzeC2EVs24W8ymXkTSRjbfLxYIBk"
+
+## 📊 APIs, Libraries & Acknowledgements
+Screenpipe (Screen Analytics)
+
+Terminator (Raw HTML Clean-up)
+
+Groq API (AI processing for UI/UX)
+
+HuggingFace Model (for natural language cleaning)
+
+Research Papers (used for fine-tuning data cleaning workflows)
+
+## ✅ Tasks & Bonus Checklist
+
+- ✅ **All members of the team completed the mandatory task - Followed at least 2 of our social channels and filled the form** (Details in Participant Manual)  
+- [ ] **All members of the team completed Bonus Task 1 - Sharing of Badges and filled the form (2 points)**  (Details in Participant Manual)
+- ✅ **All members of the team completed Bonus Task 2 - Signing up for Sprint.dev and filled the form (3 points)**  (Details in Participant Manual)
+
+## 🧪 How to Run the Project
+
+### Requirements:
+- Node.js v14+
 - MongoDB
 - Chrome browser (for extension)
+- API Keys for Groq and Gemini
 
-### Installation
+### Environment Setup:
+Create a `.env` file in the Backend directory with:
+```
+GROQ_API_KEY=your_groq_api_key
+MONGO_URI=your_mongodb_connection_string
+GEMINI_API_KEY=your_gemini_api_key
+```
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Sumit2424/CloneIT.git
-   cd CloneIT
-   ```
+### Local Setup:
+```bash
+# Clone the repo
+git clone https://github.com/Sumit2424/CloneIT.git
+cd CloneIT
 
-2. **Set up Backend**:
-   ```bash
-   cd Backend
-   npm install
-   # Create a .env file with your MongoDB connection string and other configs
-   npm start
-   ```
+# Install Backend dependencies and start server
+cd Backend
+npm install
+npm start
 
-3. **Set up Frontend**:
-   ```bash
-   cd Frontend
-   npm install
-   npm run dev
-   ```
+# In a new terminal, install Frontend dependencies and start dev server
+cd Frontend
+npm install
+npm run dev
 
-4. **Install Browser Extension**:
-   - Open Chrome browser
-   - Go to chrome://extensions/
-   - Enable Developer mode
-   - Click "Load unpacked"
-   - Select the BrowserExtension folder
+# Install Browser Extension:
+# Open Chrome > chrome://extensions > Enable Developer Mode > Load Unpacked > Select BrowserExtension folder
 
-5. **Set up SnapClone** (optional):
-   ```bash
-   cd SnapClone/be
-   npm install
-   npm start
-   
-   cd ../frontend
-   npm install
-   npm start
-   ```
+#SnaPclone Ide 
+# Snapclone IDE ->Frontend
+cd SnapClone/frontend
+npm install
+npm run dev
 
-## Usage
+#Snapclone Ide ->Backend
+cd SnapClone/be
+npm install
+npm start
 
-1. **Capture a Website**:
-   - Click on the CloneIT extension icon in Chrome
-   - Use the interface to capture full pages or specific elements
-   - Save the capture to your CloneIT account
+```
 
-2. **Manage Projects**:
-   - Log in to the CloneIT dashboard
-   - View your captured websites in the "History" section
-   - Organize captures into projects
 
-3. **Process and Adapt**:
-   - Use the AI adaptation tools to modify captured content
-   - Export components for use in your projects
+### Usage Notes:
+- Frontend runs on http://localhost:5173 (or port specified by Vite)
+- Backend API runs on http://localhost:5000
+- Make sure both servers are running to use the application properly
+- Chrome extension needs to be installed separately as described above
 
-4. **View History**:
-   - Access your capture history and project details
-   - Filter and sort by date, type, or status
+## 📎 Resources & Credits
 
-## Features
+### APIs & Services
+- **Groq API**: Used for AI-powered HTML analysis and recommendations
+- **Gemini API**: Implemented for generating design suggestions and UI improvements
+- **Firebase Authentication**: For secure user authentication and management
+- **MongoDB Atlas**: Database service for storing project data and metadata
 
-- **Secure Authentication**: User account management with Firebase authentication
-- **Real-time Updates**: Instant feedback on capture and processing status
-- **Responsive Design**: Works on desktop and mobile devices
-- **AI Processing**: Intelligent analysis and adaptation of web content
-- **Comprehensive History**: Detailed record of all captures and projects
-- **Component Library**: Reusable web components from captures
-- **Export Options**: Multiple formats for exporting captured content
+### Open Source Libraries
+- **React.js**: Frontend framework for building the user interface
+- **Express.js**: Backend server framework
+- **Tailwind CSS**: Utility-first CSS framework for styling
+- **html2canvas**: JavaScript library for capturing web page screenshots
+- **GridFS**: MongoDB's system for storing and retrieving large files
+- **Mongoose**: MongoDB object modeling tool for Node.js
 
----
+### Tools & Technologies
+- **ScreenPipe**: Screen capture and analysis tool by Replit
+- **Terminator**: HTML/DOM cleaning and parsing utility
+- **Chrome Extension API**: Used for building the browser extension
+- **Vite**: Frontend build tool and development server
 
-For more information, please refer to the individual README files in each component directory.
+### Research & Inspiration
+- "UI-to-Code Translation: State of the Art and Challenges" (2022)
+- "Understanding Web Design Patterns through Automated Analysis" (2023)
+- Open-source web cloning projects that informed our approach
+
+### Acknowledgements
+- HackHazards '25 organizers and mentors for their guidance
+- The Namespace Community for hosting this hackathon
+- Open-source community contributors whose libraries made this project possible
+- Our beta testers who provided valuable feedback on early versions
+
+## 🏁 Final Words
+Our hackathon journey with CloneIT was really fun and full of challenges.
+From setting up smart AI models to building a working browser extension, we had to think fast and learn a lot.
+
+We faced real problems — like fixing messy website data and connecting the extension to AI — but every problem taught us something new.
+There were late nights, bugs we didn't expect, and last-minute changes, but that made it even more exciting.
+
+We're proud that CloneIT went from just an idea to a real tool that can help developers save time and work faster.
+Big thanks to our mentors, friends, and teammates for supporting us all the way.
+
+This was more than a project — it's a memory we'll always remember!
