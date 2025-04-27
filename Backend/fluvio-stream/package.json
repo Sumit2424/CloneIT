@@ -1,0 +1,24 @@
+{
+  "name": "fluvio-stream",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node fluvioproducer.js",
+    "consumer": "ts-node fluvio-consumer.js",
+    "producer": "ts-node fluvioproducer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@fluvio/client": "^0.14.9",
+    "chokidar": "^3.5.3"
+  }
+}

@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  width: 320px;
+  min-height: 300px;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 18px;
+  color: #333;
+}
+
+h2 {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.connected {
+  background-color: #4CAF50;
+}
+
+.disconnected {
+  background-color: #f44336;
+}
+
+.session-info {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.separator {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 5px 0 15px;
+}
+
+.capture-controls {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.option-group label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.option-group input {
+  margin-right: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.primary {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #45a049;
+}
+
+.danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.danger:hover {
+  background-color: #d32f2f;
+}
+
+.secondary {
+  background-color: #2196F3;
+  color: white;
+}
+
+.secondary:hover {
+  background-color: #1e88e5;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.server-controls {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.server-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.server-url {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}

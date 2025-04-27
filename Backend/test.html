@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CloneIT Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #response {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+        .test-group {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>CloneIT Test Page</h1>
+    <p>This page helps you test your CloneIT server functionality without the browser extension.</p>
+
+    <div class="test-group">
+        <h2>1. Test Server Connection</h2>
+        <button id="testConnection">Test Server Connection</button>
+        <div id="connectionResult"></div>
+    </div>
+
+    <div class="test-group">
+        <h2>2. List Existing Captures</h2>
+        <button id="listCaptures">List Captures</button>
+        <div id="capturesResult"></div>
+    </div>
+
+    <div class="test-group">
+        <h2>3. Create Test Capture</h2>
+        <button id="createTestCapture">Create Test Capture</button>
+        <div id="testCaptureResult"></div>
+    </div>
+
+    <div class="test-group">
+        <h2>4. Create Manual Capture</h2>
+        <button id="createManualCapture">Create Manual Capture</button>
+        <div id="manualCaptureResult"></div>
+    </div>
+
+    <h2>Response:</h2>
+    <pre id="response">No response yet</pre>
+
+    <script>
+        document.getElementById('testConnection').addEventListener('click', async () => {
+            try {
+                const response = await fetch('http://localhost:5000/test');
+                const data = await response.json();
+                document.getElementById('connectionResult').innerHTML = 
+                    `<p style="color: green">✅ Success! Server is running.</p>
+                    <p>Response: ${JSON.stringify(data)}</p>`;
+                document.getElementById('response').textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                document.getElementById('connectionResult').innerHTML = 
+                    `<p style="color: red">❌ Error: ${error.message}</p>`;
+                document.getElementById('response').textContent = error.stack;
+            }
+        });
+
+        document.getElementById('listCaptures').addEventListener('click', async () => {
+            try {
+                const response = await fetch('http://localhost:5000/captures');
+                const data = await response.json();
+                const count = data.captures ? data.captures.length : 0;
+                document.getElementById('capturesResult').innerHTML = 
+                    `<p style="color: ${count > 0 ? 'green' : 'orange'}">
+                        ${count > 0 ? '✅ Success!' : '⚠️ Warning:'} 
+                        Found ${count} captures.
+                    </p>`;
+                document.getElementById('response').textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                document.getElementById('capturesResult').innerHTML = 
+                    `<p style="color: red">❌ Error: ${error.message}</p>`;
+                document.getElementById('response').textContent = error.stack;
+            }
+        });
+
+        document.getElementById('createTestCapture').addEventListener('click', async () => {
+            try {
+                const response = await fetch('http://localhost:5000/debug-capture', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({}),
+                });
+                const data = await response.json();
+                document.getElementById('testCaptureResult').innerHTML = 
+                    `<p style="color: green">✅ Test capture created successfully!</p>
+                    <p>Image: <a href="${data.paths.image}" target="_blank">View Image</a></p>
+                    <p>HTML: <a href="${data.paths.html}" target="_blank">View HTML</a></p>`;
+                document.getElementById('response').textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                document.getElementById('testCaptureResult').innerHTML = 
+                    `<p style="color: red">❌ Error: ${error.message}</p>`;
+                document.getElementById('response').textContent = error.stack;
+            }
+        });
+
+        document.getElementById('createManualCapture').addEventListener('click', async () => {
+            try {
+                // Create a canvas with test content
+                const canvas = document.createElement('canvas');
+                canvas.width = 200;
+                canvas.height = 100;
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = '#3498db';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = 'white';
+                ctx.font = '16px Arial';
+                ctx.fillText('CloneIT Test', 50, 50);
+                
+                const imageData = canvas.toDataURL('image/png').split(',')[1];
+                
+                // Create minimal HTML test content
+                const htmlContent = document.documentElement.outerHTML;
+                
+                // Send to server using same format as the extension
+                const response = await fetch('http://localhost:5000/process', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        image: imageData,
+                        html: htmlContent,
+                        area: { left: 0, top: 0, width: 200, height: 100 }
+                    }),
+                });
+                
+                const data = await response.json();
+                document.getElementById('manualCaptureResult').innerHTML = 
+                    `<p style="color: green">✅ Manual capture created successfully!</p>
+                    <p>Image: <a href="${data.imagePath}" target="_blank">View Image</a></p>`;
+                document.getElementById('response').textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                document.getElementById('manualCaptureResult').innerHTML = 
+                    `<p style="color: red">❌ Error: ${error.message}</p>`;
+                document.getElementById('response').textContent = error.stack;
+            }
+        });
+    </script>
+</body>
+</html> 

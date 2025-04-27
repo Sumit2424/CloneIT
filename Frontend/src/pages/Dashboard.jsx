@@ -27,13 +27,15 @@ const Dashboard = () => {
       </div>
 
       <div className="grid grid-cols-3 gap-6 mb-8">
-        <Link
-          to="/clone"
+        <a
+          href="http://localhost:5174"
+          target="_blank"
+          rel="noopener noreferrer"
           className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
         >
           <h2 className="text-xl font-semibold mb-2">Clone from URL</h2>
           <p className="text-gray-600">Start cloning a website by entering its URL</p>
-        </Link>
+        </a>
 
         <div className="p-6 bg-gray-100 rounded-lg shadow-md opacity-50 cursor-not-allowed">
           <h2 className="text-xl font-semibold mb-2">Upload Screenshot</h2>

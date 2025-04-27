@@ -1,0 +1,41 @@
+/* content.css */
+
+/* Overlay that covers the entire screen */
+.cloneit-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 9999; /* Ensure it appears above other elements */
+  }
+  
+  /* Selection box for capturing specific areas */
+  .cloneit-selection-box {
+    position: absolute;
+    border: 2px dashed #00f; /* Blue dashed border */
+    background-color: rgba(0, 0, 255, 0.2); /* Semi-transparent blue */
+    z-index: 10000; /* Above the overlay */
+    pointer-events: none; /* Allow clicks to pass through */
+  }
+  
+  /* Control buttons (e.g., Start, Stop) */
+  .cloneit-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 10001; /* Above all other elements */
+  }
+  
+  /* Button hover effect */
+  .cloneit-button:hover {
+    background-color: #f0f0f0;
+  }
+  

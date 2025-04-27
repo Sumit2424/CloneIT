@@ -1,0 +1,17 @@
+{
+  "name": "firebase-uploader",
+  "version": "1.0.0",
+  "description": "Direct Firebase uploader for prompt files",
+  "main": "uploader.js",
+  "scripts": {
+    "start": "node uploader.js",
+    "dev": "nodemon uploader.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+} 

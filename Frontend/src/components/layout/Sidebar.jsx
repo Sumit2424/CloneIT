@@ -6,10 +6,10 @@ const Sidebar = () => {
   
   const navItems = [
     { path: '/dashboard', icon: HomeIcon, label: 'Dashboard' },
-    { path: '/clone', icon: GlobeAltIcon, label: 'Clone a Website' },
+    { path: 'http://localhost:5174', icon: GlobeAltIcon, label: 'Clone a Website', external: true },
     { path: '/saved', icon: FolderIcon, label: 'Saved Components' },
     { path: '/adapt', icon: SparklesIcon, label: 'AI Adaptation' },
-    { path: '/history', icon: ClockIcon, label: 'Export History' },
+    { path: '/history', icon: ClockIcon, label: 'History' },
     { path: '/settings', icon: Cog6ToothIcon, label: 'Settings' },
   ];
 
@@ -20,8 +20,19 @@ const Sidebar = () => {
         <nav className="space-y-2">
           {navItems.map((item) => {
             const Icon = item.icon;
-            const isActive = location.pathname === item.path;
-            return (
+            const isActive = !item.external && location.pathname === item.path;
+            return item.external ? (
+              <a
+                key={item.path}
+                href={item.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 p-2 rounded-lg hover:bg-gray-700"
+              >
+                <Icon className="w-5 h-5" />
+                <span>{item.label}</span>
+              </a>
+            ) : (
               <Link
                 key={item.path}
                 to={item.path}

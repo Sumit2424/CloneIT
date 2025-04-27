@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CloneIT</title>
+        <link rel="stylesheet" href="popup.css" type="text/css">
+        <script src="html2canvas.min.js"></script>
+    </head>
+    <body>
+       <div class="container">
+         <div class="header">
+           <h1>CloneIT</h1>
+           <div class="status-indicator" id="serverStatus">
+             <span class="dot disconnected"></span>
+             <span class="status-text">Server offline</span>
+           </div>
+         </div>
+
+         <div class="session-info" id="sessionInfo">
+           <div class="no-session" id="noSession">
+             <p>No active session</p>
+             <button id="startSessionBtn" class="btn primary">Start Session</button>
+           </div>
+           <div class="active-session" id="activeSession" style="display: none;">
+             <p>Session: <span id="sessionId">-</span></p>
+             <p>Status: <span id="captureStatus">-</span></p>
+             <button id="stopSessionBtn" class="btn danger">Stop Session</button>
+           </div>
+         </div>
+
+         <div class="separator"></div>
+
+         <div class="capture-controls">
+           <h2>Capture Options</h2>
+           <div class="option-group">
+             <label>
+               <input type="radio" name="capture-mode" value="visible" checked>
+               Visible Area
+             </label>
+             <label>
+               <input type="radio" name="capture-mode" value="custom">
+               Custom Selection
+             </label>
+           </div>
+
+           <div class="buttons">
+             <button id="startBtn" class="btn primary">Start Capturing</button>
+             <button id="stopBtn" class="btn danger" disabled>Stop Capturing</button>
+           </div>
+         </div>
+
+         <div class="separator"></div>
+
+         <div class="server-controls">
+           <div class="server-actions">
+             <button id="viewSessionsBtn" class="btn secondary">View Sessions</button>
+             <span class="server-url">http://localhost:5000</span>
+           </div>
+         </div>
+       </div>
+       
+       <script src="popup.js"></script>
+    </body>
+</html>

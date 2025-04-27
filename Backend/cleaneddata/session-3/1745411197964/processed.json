@@ -1,0 +1,380 @@
+{
+  "metadata": {
+    "url": "https://www.amazon.in/",
+    "title": "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in",
+    "timestamp": 1745411197964,
+    "captureTime": 1633
+  },
+  "structure": [
+    {
+      "tag": "h2",
+      "children": [],
+      "attrs": {
+        "id": "nav-assistant-links-heading",
+        "class": "nav-assistant-heading nav-assistant-headers-font"
+      },
+      "text": "Skip to"
+    },
+    {
+      "tag": "ul",
+      "children": [
+        {
+          "tag": "li",
+          "children": [],
+          "attrs": {
+            "class": "nav-assistant-list-item"
+          },
+          "text": "Main content"
+        }
+      ],
+      "attrs": {
+        "class": "nav-assistant-links-container"
+      },
+      "text": "Main content"
+    },
+    {
+      "tag": "hr",
+      "children": [],
+      "attrs": {
+        "class": "nav-assistant-separator"
+      }
+    },
+    {
+      "tag": "h2",
+      "children": [],
+      "attrs": {
+        "id": "shortcuts-heading",
+        "class": "nav-assistant-heading nav-assistant-headers-font font-color"
+      },
+      "text": "Keyboard shortcuts"
+    },
+    {
+      "tag": "ul",
+      "children": [
+        {
+          "tag": "li",
+          "children": [],
+          "attrs": {
+            "class": "nav-assistant-list-item"
+          },
+          "text": "Search  alt + /"
+        },
+        {
+          "tag": "li",
+          "children": [],
+          "attrs": {
+            "class": "nav-assistant-list-item"
+          },
+          "text": "Cart  shift + alt + C"
+        },
+        {
+          "tag": "li",
+          "children": [],
+          "attrs": {
+            "class": "nav-assistant-list-item"
+          },
+          "text": "Home  shift + alt + H"
+        },
+        {
+          "tag": "li",
+          "children": [],
+          "attrs": {
+            "class": "nav-assistant-list-item"
+          },
+          "text": "Orders  shift + alt + O"
+        },
+        {
+          "tag": "li",
+          "children": [],
+          "attrs": {
+            "class": "nav-assistant-list-item"
+          },
+          "text": "Show/Hide shortcuts  shift + alt + Z"
+        }
+      ],
+      "attrs": {
+        "class": "keyboard-shortcuts-list-container"
+      },
+      "text": "Search  alt + /        Cart  shift + alt + C      ..."
+    },
+    {
+      "tag": "div",
+      "children": [
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "class": "shortcut-help-container"
+          },
+          "text": "To move between items, use your keyboard's up or d...",
+          "rawHTML": "<div class=\"shortcut-help-container\"> <div class=\"shortcut-help-item-container\"> <div class=\"icon-container\"><i class=\"a-icon a-icon-info a-icon-mini shortcut-help-icon\"></i></div> <div class=\"help-text-container\"> <span class=\"shortcut-help-text font-color\">To move between items, use your keyboard's up or down arrows.</span> </div> </div> </div>"
+        }
+      ],
+      "attrs": {
+        "id": "nav-assist-shortcut-help"
+      },
+      "text": "To move between items, use your keyboard's up or d...",
+      "rawHTML": "<div id=\"nav-assist-shortcut-help\"> <div class=\"shortcut-help-container\"> <div class=\"shortcut-help-item-container\"> <div class=\"icon-container\"><i class=\"a-icon a-icon-info a-icon-mini shortcut-help-icon\"></i></div> <div class=\"help-text-container\"> <span class=\"shortcut-help-text font-color\">To move between items, use your keyboard's up or down arrows.</span> </div> </div> </div> </div>"
+    },
+    {
+      "tag": "div",
+      "children": [
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "id": "nav-belt"
+          },
+          "text": ".in         Delivering to Ahmedabad 382350   Updat..."
+        },
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "id": "nav-flyout-iss-anchor"
+          }
+        },
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "id": "nav-flyout-anchor"
+          },
+          "text": "Sign inNew customer? Start here.Your ListsCreate a..."
+        },
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "id": "nav-belt-search",
+            "class": "nav-fill"
+          },
+          "rawHTML": "<div id=\"nav-belt-search\" class=\"nav-fill\"></div>"
+        },
+        {
+          "tag": "div",
+          "children": [],
+          "rawHTML": "<div style=\"position: relative; width: 100%; height: 39px;\"></div>"
+        },
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "id": "nav-main",
+            "class": "nav-sprite"
+          },
+          "text": "All        \n\nMX Player\n\n \n\nSell\n\n \n\nBestsellers\n\n ..."
+        },
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "id": "nav-subnav-toaster"
+          },
+          "rawHTML": "<div id=\"nav-subnav-toaster\"></div>"
+        },
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "id": "nav-progressive-subnav"
+          },
+          "rawHTML": "<div id=\"nav-progressive-subnav\"> </div>"
+        }
+      ],
+      "attrs": {
+        "id": "navbar",
+        "class": "nav-sprite-v1 celwidget nav-bluebeacon nav-a11y-t1 bold-focus-hover layout2 nav-flex layout3 layout3-alt nav-packard-glow hamburger nav-progressive-attribute nav-fixed"
+      },
+      "text": ".in         Delivering to Ahmedabad 382350   Updat..."
+    },
+    {
+      "tag": "div",
+      "children": [
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "id": "gw-desktop-herotator",
+            "class": "a-section a-spacing-none aok-relative tall gw-desktop-herotator-ready"
+          },
+          "text": "Previous slide\n\n\n\n\n\n\n\n\n\n\n\nNext slide"
+        }
+      ],
+      "attrs": {
+        "id": "desktop-banner",
+        "class": "celwidget"
+      },
+      "text": "Previous slide\n\n\n\n\n\n\n\n\n\n\n\nNext slide"
+    },
+    {
+      "tag": "div",
+      "children": [
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "id": "gw-card-layout",
+            "class": "a-section a-spacing-none gw-card-layout"
+          },
+          "text": "Appliances for your home | Up to 55% offAir condit..."
+        },
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "id": "gw-content-grid",
+            "class": "a-section a-spacing-large"
+          },
+          "text": "Up to 60% off | Trending products from Emerging Bu..."
+        }
+      ],
+      "attrs": {
+        "id": "gw-layout",
+        "class": "a-section a-spacing-none aok-relative"
+      },
+      "text": "Appliances for your home | Up to 55% offAir condit..."
+    },
+    {
+      "tag": "div",
+      "children": [
+        {
+          "tag": "br",
+          "children": []
+        },
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "id": "rhf-container"
+          },
+          "rawHTML": "<div id=\"rhf-container\"> <div class=\"rhf-loading-outer\"> <table class=\"rhf-loading-middle\"> <tbody><tr> <td class=\"rhf-loading-inner\"> <img src=\"https://m.media-amazon.com/images/G/31/personalization/ybh/loading-4x-gray._CB485916689_.gif\"> </td> </tr> </tbody></table> </div> <div id=\"rhf-context\"> </div> </div>"
+        },
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "id": "rhf-error"
+          },
+          "text": "Your recently viewed items and featured recommenda..."
+        },
+        {
+          "tag": "br",
+          "children": []
+        }
+      ],
+      "attrs": {
+        "class": "rhf-frame"
+      },
+      "text": "<div class='rhf-border'> <div class='rhf-header'> ..."
+    },
+    {
+      "tag": "a",
+      "children": [
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "class": "navFooterBackToTop"
+          },
+          "text": "Back to top",
+          "rawHTML": "<div class=\"navFooterBackToTop\"> <span class=\"navFooterBackToTopText\"> Back to top </span> </div>"
+        }
+      ],
+      "attrs": {
+        "id": "navBackToTop"
+      },
+      "text": "Back to top"
+    },
+    {
+      "tag": "div",
+      "children": [
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "class": "navFooterVerticalRow navAccessibility"
+          },
+          "text": "Get to Know Us   About Amazon   Careers   Press Re..."
+        }
+      ],
+      "attrs": {
+        "class": "navFooterVerticalColumn navAccessibility"
+      },
+      "text": "Get to Know Us   About Amazon   Careers   Press Re..."
+    },
+    {
+      "tag": "div",
+      "children": [],
+      "attrs": {
+        "class": "nav-footer-line"
+      },
+      "rawHTML": "<div class=\"nav-footer-line\"></div>"
+    },
+    {
+      "tag": "div",
+      "children": [
+        {
+          "tag": "span",
+          "children": []
+        },
+        {
+          "tag": "span",
+          "children": [],
+          "attrs": {
+            "class": "icp-container-desktop"
+          },
+          "text": "English   India"
+        }
+      ],
+      "attrs": {
+        "class": "navFooterLine navFooterLinkLine navFooterPadItemLine"
+      },
+      "text": "English   India"
+    },
+    {
+      "tag": "div",
+      "children": [
+        {
+          "tag": "div",
+          "children": [],
+          "attrs": {
+            "class": "navFooterMoreOnAmazon navFooterMoreOnAmazonWrapper"
+          },
+          "text": "AbeBooksBooks, art& collectibles\nAmazon Web Servic..."
+        }
+      ],
+      "attrs": {
+        "class": "navFooterLine navFooterLinkLine navFooterDescLine"
+      },
+      "text": "AbeBooksBooks, art& collectibles\nAmazon Web Servic..."
+    },
+    {
+      "tag": "div",
+      "children": [
+        {
+          "tag": "ul",
+          "children": [],
+          "text": "Conditions of Use & Sale Privacy Notice Interest-B..."
+        },
+        {
+          "tag": "span",
+          "children": [],
+          "text": "© 1996-2025, Amazon.com, Inc. or its affiliates"
+        }
+      ],
+      "attrs": {
+        "class": "navFooterLine navFooterLinkLine navFooterPadItemLine navFooterCopyright"
+      },
+      "text": "Conditions of Use & Sale Privacy Notice Interest-B..."
+    },
+    {
+      "tag": "iframe",
+      "children": [],
+      "attrs": {
+        "id": "DAsis",
+        "src": "//aax-eu.amazon-adsystem.com/s/iu3?d=amazon.in&slot=navFooter&a2=0101088989c40735746c054fe015d616452c31668878e8949d6a58af66c39ac2e223&old_oo=0&ts=1745411167934&s=AdPNBiSAq1EWbZQyzcVpqzLew8rj1QLcB7YC1GGZbsec&gdpr_consent=&gdpr_consent_avl=&cb=1745411167934"
+      }
+    }
+  ]
+}

@@ -11,6 +11,7 @@ import ClonePage from './pages/ClonePage';
 import AdaptPage from './pages/AdaptPage';
 import ExportPage from './pages/ExportPage';
 import SavedLibrary from './pages/SavedLibrary';
+import HistoryPage from './pages/HistoryPage';
 
 // Private Route component to protect routes that require authentication
 function PrivateRoute({ children }) {
@@ -50,16 +51,6 @@ function App() {
               }
             />
             <Route
-              path="/clone"
-              element={
-                <PrivateRoute>
-                  <Layout>
-                    <ClonePage />
-                  </Layout>
-                </PrivateRoute>
-              }
-            />
-            <Route
               path="/adapt"
               element={
                 <PrivateRoute>
@@ -85,6 +76,16 @@ function App() {
                 <PrivateRoute>
                   <Layout>
                     <SavedLibrary />
+                  </Layout>
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/history"
+              element={
+                <PrivateRoute>
+                  <Layout>
+                    <HistoryPage />
                   </Layout>
                 </PrivateRoute>
               }

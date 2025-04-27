@@ -55,7 +55,6 @@ venv.bak/
 *.sqlite
 
 # Django specific
-*.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -66,17 +65,14 @@ static/
 instance/
 .webassets-cache
 
-# Database
-*.sqlite3
-*.db
-*.sqlite
-
 # IDE specific
 .idea/
-.vscode/
 *.swp
 *.swo
 *.swn
 *.bak
 *.tmp
-*.temp 
+*.temp
+
+# Large binary files
+rustup-init.exe 
