@@ -1,7 +1,6 @@
 # CloneIT
 
 ![HackHazards '25 Banner](./assets/hackhazardlogo.jpg)
-*This project was proudly built during HackHazards '25 - India's biggest community hackathon*
 
 🚀 CloneIT
 Cursor AI + Figma + GPT, but built specifically for fast prototyping and real-time UI transformation.
