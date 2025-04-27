@@ -172,6 +172,20 @@ npm start
 - Make sure both servers are running to use the application properly
 - Chrome extension needs to be installed separately as described above
 
+## 🧬 Future Scope
+
+### Enhanced Automation
+Implement deeper automation in processes to reduce manual intervention and improve efficiency.
+
+### AI Integration
+Integrate machine learning models for smarter decision-making, predictions, or personalization.
+
+### User Personalization
+Add features that tailor the experience based on user behavior and preferences.
+
+### Cross-Platform Support
+Extend compatibility across more devices and platforms (e.g., mobile apps, tablets).
+
 ## 📎 Resources & Credits
 
 ### APIs & Services
