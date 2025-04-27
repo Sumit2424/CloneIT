@@ -1,6 +1,6 @@
 # CloneIT
 
-![HackHazards '25 Banner](./assets/hackhazards_banner.jpg)
+![HackHazards '25 Banner](./assets/hackhazardlogo.jpg)
 *This project was proudly built during HackHazards '25 - India's biggest community hackathon*
 
 🚀 CloneIT
@@ -87,7 +87,7 @@ Sponsor Technologies Used:
 ![Extension Popup](./assets/extension-popup.png)
 
 ### Dashboard Overview
-![Dashboard](./assets/dashboard.png)
+![Dashboard](./assets/Dashboard.png)
 
 ### Component Editing using AI
 ![Component Editor](./assets/component-editor.png)
