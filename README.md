@@ -1,6 +1,6 @@
 # CloneIT
 
-![HackHazards '25 Banner](https://raw.githubusercontent.com/Sumit2424/CloneIT/assets/hackhazards_banner.jpg)
+![HackHazards '25 Banner](./assets/hackhazards_banner.jpg)
 *This project was proudly built during HackHazards '25 - India's biggest community hackathon*
 
 🚀 CloneIT
